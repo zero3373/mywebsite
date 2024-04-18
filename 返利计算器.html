@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>返利计算器</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>返利计算器</h2>
+        <input type="number" placeholder="主推荐人当月消费金额" id="mainAmountInput">
+        <button onclick="addRecommendation()">添加推荐人</button>
+        <div id="amountInputs">
+            <p>
+                <input type="number" placeholder="第一级被推荐人消费金额" id="amountInput0">
+                <input type="number" placeholder="第二级被推荐人数量" id="numSecondLevelInput0">
+            </p>
+        </div>
+        <button onclick="calculateRebate()">计算返利</button>
+        <div id="rebateDetails"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
